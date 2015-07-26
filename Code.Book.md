@@ -25,25 +25,25 @@ Calculation steps:
 Variables:
 1. "variables" - dataset from "features.txt"
 2. "activity_labels":
-initially - dataset from "activity_labels.txt"
+initially - dataset from "activity_labels.txt";
 on second step - same dataset, but with renamed variables ("activity" instead of "V1" and "activity_label" instead of "V2")
 3. "x_test":
-initially - dataset from "test/X_test.txt"
+initially - dataset from "test/X_test.txt";
 on second step - same dataset, but variable names are inserted from second column of "variables"
 4. "y_test":
-initially - dataset from "test/y_test.txt"
+initially - dataset from "test/y_test.txt";
 on second step - same dataset, but with renamed variable name ("activity" instead of "V1")
 5. "subject_test":
-initially - dataset from "test/subject_test.txt"
+initially - dataset from "test/subject_test.txt";
 on second step - same dataset, but with renamed variable name ("person" instead of "V1")
 6. "x_train":
-initially - dataset from "train/X_train.txt"
+initially - dataset from "train/X_train.txt";
 on second step - same dataset, but variable names are inserted from second column of "variables"
 7. "y_train":
-initially - dataset from "train/y_train.txt"
+initially - dataset from "train/y_train.txt";
 on second step - same dataset, but with renamed variable name ("activity" instead of "V1")
 8. "subject_train":
-initially - dataset from "train/subject_train.txt"
+initially - dataset from "train/subject_train.txt";
 on second step - same dataset, but with renamed variable name ("person" instead of "V1")
 9."x_test_picked" - dataset, picked from "x_test", including only mean and std variables (in 2 steps - firstly, pick variables containing "mean" 
 or "std", secondly - excluding variables containing "Freq" to exclude Freqmean variables)
@@ -52,7 +52,7 @@ or "std", secondly - excluding variables containing "Freq" to exclude Freqmean v
 11. "test_picked" - dataset, combining "x_test_picked", "y_test", "subject_test"
 12. "train_picked" - dataset, combining "x_train_picked", "y_train", "subject_train"
 13. "dataset_picked":
-initially - row-binded datasets "test_picked" and "dataset_picked"
+initially - row-binded datasets "test_picked" and "dataset_picked";
 on second step - itself but merged with dataset "activity_labels" (by variable "activity")
 14. "dataset_picked_groupped" - "dataset_picked" dataset, groupped by variables "activity label" and "person"
 15. "result_dataset" (written into output file) - summarized dataset from "dataset_picked_groupped": mean values of all variables by "activity label" and "person"
